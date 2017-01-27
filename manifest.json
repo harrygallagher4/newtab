@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "newtab",
+  "version": "0.0.1",
+
+  "description": "Open links in new tabs depending on selectors",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["newtab.js"]
+    }
+  ],
+  "permissions": [
+    "storage"
+  ],
+  "options_page": "config.html"
+}
